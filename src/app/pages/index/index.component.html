@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="100" id="navbar-top">
+  <div class="container">
+    <div class="navbar-translate">
+      <a class="navbar-brand" placement="bottom" [routerLink]="['/home']" target="_blank">
+        <span> MEMER • </span> Get Creative
+      </a>
+
+    </div>
+
+  </div>
+</nav>
+<div class="wrapper">
+  <div class="page-header header-filter">
+    <div class="squares square1"></div>
+    <div class="squares square2"></div>
+    <div class="squares square3"></div>
+    <div class="squares square4"></div>
+    <div class="squares square5"></div>
+    <div class="squares square6"></div>
+    <div class="squares square7"></div>
+    <div class="container">
+      <div class="content-center brand">
+        <h1 class="h1-seo">MEMER by Amit Wani</h1>
+        <h3>
+          Get Creative by generating memes. Just two clicks away!
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+
+    <div class="section section-basic" id="basic-elements">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="title">Choose a meme template</h2>
+          </div>
+          <div class="col ml-auto">
+            <input style="display: none" type="file" accept="image/jpeg" (change)="onFileChanged($event)" #fileInput>
+            <button type="button" class="btn btn-primary text-right ml-auto" style="margin-top: 30px;
+            margin-bottom: 25px;" (click)="fileInput.click()">Add Custom Image</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="card-columns" class="card-columns mx-2">
+    <div *ngFor="let meme of memes" class="card" style="width: 100%">
+      <img src="{{meme.url}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{meme.name}}</h5>
+        <a [routerLink]="['/meme',meme.id]" class="btn btn-primary">Choose</a>
+      </div>
+    </div>
+  </div>
+
+</div>
