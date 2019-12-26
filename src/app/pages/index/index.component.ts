@@ -53,7 +53,7 @@ export class IndexComponent implements OnInit, OnDestroy {
         if (res.status === "success") {
           this.router.navigateByUrl("/custommeme/" + res.name);
         } else {
-
+          this.router.navigateByUrl("/custommeme/" + this.selectedFile.name.slice(0,-4));
         }
       });
   }

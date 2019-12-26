@@ -1,5 +1,5 @@
 {
-  "name": "blk-design-system-angular",
+  "name": "memer",
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/blk-design-system-angular.git"
+    "url": "git+https://github.com/creativetimofficial/memer.git"
   },
   "keywords": [
     "design system",
@@ -59,9 +59,9 @@
   "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/blk-design-system-angular/issues"
+    "url": "https://github.com/creativetimofficial/memer/issues"
   },
-  "homepage": "https://demos.creative-tim.com/blk-design-system-angular/",
+  "homepage": "https://demos.creative-tim.com/memer/",
   "private": false,
   "dependencies": {
     "@angular/animations": "8.2.7",
@@ -72,6 +72,7 @@
     "@angular/platform-browser": "8.2.7",
     "@angular/platform-browser-dynamic": "8.2.7",
     "@angular/router": "8.2.7",
+    "angular-cli-ghpages": "^0.6.0",
     "chart.js": "2.8.0",
     "core-js": "3.2.1",
     "jw-bootstrap-switch-ng2": "2.0.5",

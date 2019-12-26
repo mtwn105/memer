@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "blk-design-system-angular": {
+    "memer": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/blk-design-system-angular",
+            "outputPath": "dist/memer",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "blk-design-system-angular:build"
+            "browserTarget": "memer:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "blk-design-system-angular:build:production"
+              "browserTarget": "memer:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "blk-design-system-angular:build"
+            "browserTarget": "memer:build"
           }
         },
         "test": {
@@ -108,10 +108,14 @@
               "**/node_modules/**"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     },
-    "blk-design-system-angular-e2e": {
+    "memer-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -120,11 +124,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "blk-design-system-angular:serve"
+            "devServerTarget": "memer:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "blk-design-system-angular:serve:production"
+              "devServerTarget": "memer:serve:production"
             }
           }
         },
@@ -140,5 +144,5 @@
       }
     }
   },
-  "defaultProject": "blk-design-system-angular"
+  "defaultProject": "memer"
 }

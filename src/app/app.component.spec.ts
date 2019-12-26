@@ -16,10 +16,10 @@ describe("AppComponent", () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'blk-design-system-angular'`, () => {
+  it(`should have as title 'memer'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual("blk-design-system-angular");
+    expect(app.title).toEqual("memer");
   });
 
   it("should render title in a h1 tag", () => {
@@ -27,7 +27,7 @@ describe("AppComponent", () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector("h1").textContent).toContain(
-      "Welcome to blk-design-system-angular!"
+      "Welcome to memer!"
     );
   });
 });
